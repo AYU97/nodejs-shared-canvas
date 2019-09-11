@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <meta charset="utf-8" />
+            <title>Multiplayer Drawing game</title>
+            <meta name="viewport" content="width=device-width">
+            <meta name="apple-mobile-web-app-capable" content="yes">    
+            <meta name="mobile-web-app-capable" content="yes">
+
+    
+            <!-- The stylesheets -->
+            <link rel="stylesheet" href="css/styles.css" />
+
+    </head>
+
+    <body>
+            <div id="cursors">
+                    <!-- The mouse pointers will be created here -->
+                </div>
+        
+                <canvas id="paper" width="1000" height="600">
+                    Your browser needs to support canvas for this to work!
+                </canvas>
+                
+                <hgroup id="instructions">		
+                    <h1>You can draw anywhere!</h1>
+                    <h2>You will see everyone else who's doing the same.</h2>
+                    <h3>Tip: if the stage gets dirty, simply reload the page</h3>
+                </hgroup>
+                <footer>
+
+                  <h1> Created by - Ayush Singh Gaur</h1>
+               
+              <h2>Line Width : <input type="text" id="lineWidth" min = "1" maxlength="2" size="2"></input></h2>  
+             <p> Line Color : <input type="color" id="lineColor" value="black"></input></p>
+                     
+            
+                   </footer>
+
+        <script src = "/socket.io/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.min.js"></script>
+        <script src = "/js/client.js"></script>
+
+    
+    </body>
+</html>
